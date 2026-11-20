@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nous: privacy</title>
+<style>
+  :root { color-scheme: light dark; --ink: #2B1D2E; --muted: #6E5A72; --accent: #D03068; --bg: #FFF5F8; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #F6EAF2; --muted: #BFA9C4; --accent: #FF7AA8; --bg: #1E1420; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { color: var(--accent); font-size: 34px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); font-size: 15px; }
+  ul { padding-left: 20px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Nous</h1>
+<p class="muted">Privacy policy · last updated 19 November 2026</p>
+
+<p>Nous is an app for two people, used on two iPhones paired together. It's built so that what you share stays between those two phones. This page says exactly what goes where.</p>
+
+<h2>In short</h2>
+<ul>
+  <li>Everything you share is end-to-end encrypted on your phone before it leaves. Only your two phones can read it. Not Apple, not the developer, not anyone else.</li>
+  <li>No accounts, no ads, no tracking, no analytics. Nothing about you is sold or shared.</li>
+</ul>
+
+<h2>What's on your phone</h2>
+<p>Your pics, plans, notes, chat, statuses and the keys that protect them are stored on your iPhone, inside Nous, and kept out of your iPhone's own backups. An optional passcode protects the app. Nous's encrypted backup, if you make one, is a file you keep, protected by a password you choose.</p>
+
+<h2>What leaves your phone, and who can see what</h2>
+<ul>
+  <li><strong>iCloud (Apple).</strong> To reach the other phone, what you share is stored in Apple's iCloud as encrypted records only your two phones can open. Apple sees that records exist, when, and roughly how big, but not what's in them.</li>
+  <li><strong>The relay.</strong> While Nous is open, a small server (on Cloudflare) passes encrypted messages between your two phones in real time, so things arrive instantly. It can't read them, and it keeps no logs. It stores only random device numbers and Apple push tokens, to ring a phone for a call and refresh its widgets.</li>
+  <li><strong>Calls.</strong> Voice and video calls go directly from phone to phone, encrypted. When a network blocks a direct connection, they go through Cloudflare's relay servers, still encrypted end to end.</li>
+  <li><strong>Notifications.</strong> Apple's push service tells your phone something arrived, with no content. Your phone then opens it and writes the notification itself.</li>
+  <li><strong>Location and weather.</strong> Only if you turn on "Share my city, time and weather": your phone uses your approximate location to find your city and asks Apple's WeatherKit for the weather. Only the city name, time zone and weather go to the other phone, encrypted. Coordinates never leave your phone.</li>
+  <li><strong>Links.</strong> When you send a link, your phone fetches its title and picture for the preview. Playing a video from a link loads it from that site (YouTube, for example), like any web page.</li>
+</ul>
+
+<h2>What the developer can see</h2>
+<p>Nothing you share. The developer runs the relay described above and can't read anything that goes through it.</p>
+
+<h2>Deleting your data</h2>
+<p>Settings › Erase all data removes everything from your phone. Deleting the app does too. Encrypted records left in iCloud can't be read by anyone without your two phones' keys.</p>
+
+<h2>Children</h2>
+<p>Nous isn't meant for children and doesn't knowingly collect anything from anyone.</p>
+
+<h2>Changes</h2>
+<p>If this ever changes, this page will say so, with a new date at the top.</p>
+
+<h2>Contact</h2>
+<p>Questions: <a href="mailto:nfiorini.n@gmail.com">nfiorini.n@gmail.com</a></p>
+</main>
+</body>
+</html>
